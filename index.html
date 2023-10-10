@@ -3,14 +3,54 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HJSM Weather app</title>
+    <!doctype html>
+    <html lang="en">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="src/style.css">
+        <link rel="stylesheet" href="src/index.js" class="js">
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    </head>
 </head>
 
 <body>
-    <h1>
-        example text
+    <h1 class="title">
+        Forecast app
     </h1>
+    <img class="imgicon" src="src/weathericon.png"
+        alt="Graphic of woman pointing to weather board to show a weather forecast"> </img>
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <h5> Today: 5 October 2023 </h5>
+                </li>
+                <li class="list-group-item">
+                    <h6> Manchester: 21° mostly cloudy </h6>
+                    <h7> ⛅️ Wind: 6mph Humidity: 64% </h7>
+                </li>
+            </ul>
+        </div>
+        <form id="search-form">
+            <label for="city"> Check other forecasts </label>
+            <input type="text" placeholder="Type location" autocomplete="off" autofocus="on" />
+            <input type="submit" value="submit" id="search-form" />
+        </form>
+    </div>
+    <button type="button" class="btn btn-primary btn-lg" id="button-click"> Current location </button>
+    </div>
 </body>
 
 </html>
